@@ -1,0 +1,21 @@
+hash table:
+
+No sé si te habrás fijado que a veces aparece “indexando” en el buscador del sistema operativo (suele aparecer recién formateamos un ordenador, o se han añadido muchos ficheros nuevos), y en ese momento la búsqueda se hace muy lenta; pero cuando no pone “indexando” la búsqueda es inmediata de cualquier cosa en nuestro ordenador.
+
+Esto es por qué este “indexado” lo que hace es crear las “tablas Hash”, las rellena con la información de los ficheros contenidos en el ordenador, como veremos a continuación. La “indexación” suele ser bastante compleja, tanto como lo hayan querido hacer de complejo el creador de la misma “indexación” (no será igual a como lo haga Google, a Microsoft, a Apple, entre otros); podría complementarse con otra estructura de datos como los árboles (algunos son árboles B, B+, o B*), utilizar la nube para obtener datos pre-calculados, etc.
+
+Una tabla Hash es un contenedor asociativo (tipo Diccionario) que permite un almacenamiento y posterior recuperación eficientes de elementos (denominados valores) a partir de otros objetos, llamados claves.
+
+Una tabla hash se puede ver como un conjunto de entradas. Cada una de estas entradas tiene asociada una clave única, y por lo tanto, diferentes entradas de una misma tabla tendrán diferentes claves. Esto implica, que una clave identifica univocamente a una entrada en una tabla hash.
+
+Por otro lado, las entradas de las tablas hash están compuestas por dos componentes, la propia clave y la información que se almacena en dicha entrada.
+
+Estructura de una tabla hash
+La estructura de las tablas hash es lo que les confiere su gran potencial, ya que hace de ellas unas estructuras extremadamente eficientes a la hora de recuperar información almacenada. El tiempo medio de recuperación de información es constante, es decir, no depende del tamaño de la tabla ni del número de elementos almacenados en la misma.
+
+Una tabla hash está formada por un array de entradas, que será la estructura que almacene la información, y por una función de dispersión. La función de dispersión permite asociar el elemento almacenado en una entrada con la clave de dicha entrada. Por lo tanto, es un algoritmo crítico para el buen funcionamiento de la estructura.
+
+Cuando se trabaja con tablas hash es frecuente que se produzcan colisiones. Las colisiones se producen cuando para dos elementos de información distintos, la función de dispersión les asigna la misma clave. Como se puede suponer, esta solución se debe arreglar de alguna forma. Para ello las tablas hash cuentan con una función de resolución de colisiones.
+
+---Conclusion----
+Bueno este algoritmo nos ayuda a ver como se hacen las busquedas por los motores de google o incluso de nuestra propia pc, la verdad es un tema algo complicado por los conceptos que esta manejando, me costo un poco de trabajo entenderlo y no aseguro que lo entende en su totalidad aun estoy confundido con uno que otro concepto de como funciona.
