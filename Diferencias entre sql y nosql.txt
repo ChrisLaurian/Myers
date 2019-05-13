@@ -1,0 +1,64 @@
+SQL y No-SQL
+
+La diferencia fundamental entre amos tipos de bases de datos radica en que las bases de datos no-sql no utilizan el modelo relacional.
+
+Ventajas de las bases de datos relacionales:
+
+- Está más adaptado su uso y los perfiles que las conocen son mayoritarios y más baratos.
+
+- Debido al largo tiempo que llevan en el mercado, estas herramientas tienen un mayor soporte y mejores suites de productos y add-ons para gestionar estas bases de datos.
+
+- La atomicidad de las operaciones en la base de datos. Esto es, que en estas bases de datos o se hace la operación entera o no se hace utilizando la famosa técnica del rollback.
+
+- Los datos deben cumplir requisitos de integridad tanto en tipo de dato como en compatibilidad.
+
+Desventajas de las Bases de Datos relacionales:
+
+- La atomicidad de las operaciones juega un papel crucial en el rendimiento de las bases de datos.
+
+- Escalabilidad, que aunque probada en muchos entornos productivos suele, por norma, ser inferior a las bases de datos NoSQL.
+
+Ventajas de una base de datos NoSQL:
+
+- La escalabilidad y su carácter descentralizado. Soportan estructuras distribuidas.
+
+- Suelen ser bases de datos mucho más abiertas y flexibles. Permiten adaptarse a necesidades de proyectos mucho más fácilmente que los modelos de Entidad Relación.
+
+- Se pueden hacer cambios de los esquemas sin tener que parar bases de datos.
+
+- Escalabilidad horizontal: son capaces de crecer en número de máquinas, en lugar de tener que residir en grandes máquinas.
+
+- Se pueden ejecutar en máquinas con pocos recursos.
+
+- Optimización de consultas en base de datos para grandes cantidades de datos.
+
+Desventajas de una base de datos NoSQL:
+
+- No todas las bases de datos NoSQL contemplan la atomicidad de las instrucciones y la integridad de los datos. Soportan lo que se llama consistencia eventual.
+
+- Problemas de compatibilidad entre instrucciones SQL. Las nuevas bases de datos utilizan sus propias características en el lenguaje de consulta y no son 100% compatibles con el SQL de las bases de datos relacionales. El soporte a problemas con las queries de trabajo en una base de datos NoSQL es más complicado.
+
+- Falta de estandarización. Hay muchas bases de datos NoSQL y aún no hay un estándar como sí lo hay en las bases de datos relacionales. Se presume un futuro incierto en estas bases de datos.
+
+- Soporte multiplataforma. Aún quedan muchas mejoras en algunos sistemas para que soporten sistemas operativos que no sean Linux.
+Suelen tener herramientas de administración no muy usables o se accede por consola.
+
+
+NoSQL vs SQL; cuándo utilizar qué tipo de base de datos
+
+- Cuando los datos deben ser consistentes sin dar posibilidad al error utilizar una base de datos relacional, SQL.
+
+- Cuando nuestro presupuesto no se puede permitir grandes máquinas y debe destinarse a máquinas de menor rendimiento, NoSQL.
+
+- Cuando las estructuras de datos que manejamos son variables, NoSQL.
+
+- Análisis de grandes cantidades de datos en modo lectura, NoSQL.
+
+- Captura y procesado de eventos, NoSQL.
+
+- Tiendas online con motores de inteligencia complejos, NoSQL.
+
+-----Conclución-----
+
+Es emocionante como podemos ver nuevas tecnologias como van surgiendo a partir de las necesidades de diferentes personas o empresas, sin duda tiene muchas ventajas utlizar no-sql pero claro dependiendo de tu tipo de proyecto que estas desarrollando, yo sinceramente aun me inclino a sql por que estoy mas familiarizado con ese sistema pero me encantaria tambier saber mas sobre no-sql.
+
