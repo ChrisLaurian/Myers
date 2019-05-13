@@ -1,0 +1,22 @@
+Quicksort:
+
+El ordenamiento rápido (quicksort en inglés) es un algoritmo basado en la técnica de divide y vencerás, que permite, en promedio, ordenar n elementos en un tiempo proporcional a n log n. Esta es la técnica de ordenamiento más rápida conocida. Fue desarrollada por C. Antony R. Hoare en 1960. El algoritmo original es recursivo, pero se utilizan versiones iterativas para mejorar su rendimiento (los algoritmos recursivos son en general más lentos que los iterativos, y consumen más recursos).
+
+El algoritmo fundamental es el siguiente:
+
+- Elegir un elemento de la lista de elementos a ordenar, al que llamaremos pivote.
+
+- Resituar los demás elementos de la lista a cada lado del pivote, de manera que a un lado queden todos los menores que él, y al otro los mayores. En este momento, el pivote ocupa exactamente el lugar que le corresponderá en la lista ordenada.
+
+- La lista queda separada en dos sublistas, una formada por los elementos a la izquierda del pivote, y otra por los elementos a su derecha.
+
+- Repetir este proceso de forma recursiva para cada sublista mientras éstas contengan más de un elemento. Una vez terminado este proceso todos los elementos estarán ordenados. Como se puede suponer, la eficiencia del algoritmo depende de la posición en la que termine el pivote elegido.
+
+- En el mejor caso, el pivote termina en el centro de la lista, dividiéndola en dos sublistas de igual tamaño. En este caso, el orden de complejidad del algoritmo es O(n·log n).
+
+- En el peor caso, el pivote termina en un extremo de la lista. El orden de complejidad del algoritmo es entonces de 0(n²). El peor caso dependerá de la implementación del algoritmo, aunque habitualmente ocurre en listas que se encuentran ordenadas, o casi ordenadas.
+En el caso promedio, el orden es O(n·log n).
+
+----Conclución------
+
+Como su nombre lo indica es un algorito para ordeamiento de elementos que se presian con rapidez y actualmente conocido por ser de los mejores algoritmos en cuanto uso de recursos, ya que utiliza menos operaciones para su funcionamiento.

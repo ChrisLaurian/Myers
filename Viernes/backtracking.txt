@@ -1,0 +1,12 @@
+backtracking:
+
+Se trata de una estrategia normalmente recursiva para resolver problemas como los de los laberintos, la colocación de piezas y similares, en los que mediante una búsqueda en profundidad se puede dar con la solución.
+
+El nombre vuelta atrás (backtracking) viene del hecho de que en la búsqueda de la solución se va volviendo a un punto anterior para probar alternativas.
+
+Imaginemos un laberinto: al llegar a una encrucijada (1, 2, 3) se prueba con una dirección. Si con eso se llega a la solución, problema resuelto. Si no, se vuelve atrás a la encrucijada anterior y se prueba con otra, repitiendo el proceso cuantas veces sea necesario. (Si se agotan todas las opciones y no se ha llegado, es que no existe solución: no hay salida)
+
+Normalmente las combinaciones de este tipo de problemas son muchas, pero se aplican ciertas restricciones, lo que suele hacer el total de opciones a probar algo computable en un tiempo razonable. También se puede buscar revisar todas planteando obtener «una solución mejor»; de este modo se puede llegar a la solución óptima.
+
+---Conclusion----
+En lo personal me agrada esta forma de resolver los problemas, deecho es algo que yo utilizo para resolver algunos problemas, claro siempre y cuando sea posible regresar y probar otra solucion u otro intento, pero como en todos los algoritmos que he visto y vere me gustaria poder implementerlos en codigo para ver como funciona y que problemas son capaces de solucionar.
