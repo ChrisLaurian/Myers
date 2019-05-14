@@ -1,0 +1,35 @@
+La base de datos de código abierto MongoDB NoSQL es un almacén de datos orientado a documentos multiplataforma, desarrollado originalmente por la compañía de software MongoDB en el 2007 como un componente de una plataforma de producto como servicio. La compañía cambió a un modelo de desarrollo de código abierto en el 2009, y la base de datos ha sido adoptada como el software de back-end de los numerosos sitios web y servicios desde entonces, incluyendo Craigslist, eBay y Foursquare.
+
+Urban Outfitters
+Urban Outfitters -la empresa minorista que posee las marcas Anthropologie, BHLDN, Free People, Terrain y Urban Outfiters- utiliza MongoDB para potenciar su plataforma de comercio electrónico. La plataforma ofrece capacidades y servicios para todos sus canales, lo que permite al minorista poder diseñar y liberar nuevas aplicaciones, a la vez que ofrece una experiencia consistente al cliente.
+
+Sprinklr
+La empresa de tecnología social, Sprinklr, se basa en MongoDB para almacenar la actividad social de sus más de mil clientes -incluyendo 40% de las empresas Fortune 50- a través de más de 20 canales, incluyendo mensajes de Facebook, tweets y subidas de YouTube. La implementación MongoDB de Sprinklr maneja más de tres millones de transacciones por minuto, y es compatible con la capacidad de la compañía para lanzar al menos una funcionalidad importante y más de 100 características cada mes.
+
+Square Enix
+Square Enix, el editor de juegos detrás de títulos como Tomb Raider y Final Fantasy, estaba luchando con los límites de escalabilidad de las bases de datos relacionales antes de que migrara a MongoDB. Mediante la adopción de una base de datos como servicio multi huesped, el editor ha consolidado las instancias de base de datos, lo que resulta en un mayor rendimiento y fiabilidad.
+
+Las herramientas operativas avanzadas han permitido que el equipo de operaciones en Square Enix escale decenas de grupos de base de datos bajo demanda, y ofrezca disponibilidad 24x7 a jugadores de todo el mundo, todo con un solo administrador.
+
+Bosch Group
+Bosch Group es una de las empresas de ingeniería más grandes del mundo, y su división Bosch Software Innovations (SI) está a la vanguardia de la Internet de las Cosas (IoT por sus siglas en inglés). Bosch SI cree que IoT se trata de mucho más que simplemente almacenar los datos que fluyen fuera de los 50 mil millones de dispositivos que los analistas de la industria estiman estarán conectados a Internet para el año 2020. Para Bosch SI, el éxito en la IoT significa aplicaciones con la capacidad de realizar análisis complejos en tiempo real para desbloquear una nueva visión y conducir decisiones autónomas.
+
+Departamento de Asuntos de los Veteranos de EE.UU.
+Como uno de los proveedores de salud más grandes del mundo -que sirve a más de 20 millones de personas-, el Departamento de Asuntos de los Veteranos tiene que manejar una gran cantidad de información, desde proporcionar médicos con expedientes médicos precisos, hasta darle a los veteranos una idea clara de sus beneficios.
+
+x.ai
+x.ai es un asistente personal impulsado por AI que agenda las reuniones para sus usuarios. Los usuarios se conectan sus calendarios a x.ai, y luego, cuando es el momento de fijar una reunión a través de correo electrónico, los usuarios en lugar de delegar la tarea de programación en 'Amy Ingram' mediante copia oculta a amy@x.ai. Una vez que ha copiado el correo electrónico, busca una hora agradable entre los dos, el lugar, y establece la reunión por usted.
+
+Washington Post
+El legendario Washington Post es uno de los diarios de mayor circulación en los EE.UU. Su énfasis en la política nacional significa que recibe un gran número de cartas, tanto en forma impresa como en línea. El equipo editorial del periódico construyó una herramienta de contenido generado por el usuario denominada SUB que utiliza MongoDB para ayudar a un grupo diverso de equipos crear formularios dinámicos y respuestas a artículos en línea.
+
+Ciudad de Chicago
+La ciudad de Chicago ha desarrollado una plataforma de operaciones inteligente llamada WindyGrid usando MongoDB. WindyGrid reúne a diario siete millones de piezas diferentes de datos de departamentos de la ciudad todos los días. A continuación, junta análisis impulsados por MongoDB con mapas visuales, dando a los administradores una visión en tiempo real de las operaciones de la ciudad.
+
+Mintigo
+El proveedor de automatización de marketing Mintigo se especializa en el marketing predictivo. Utiliza el análisis predictivo para ayudar a descubrir el perfil ideal del cliente, dirigirse a los prospectos con mayor propensión a comprar y comprometerlos con el mensaje correcto a través de los canales adecuados. Para ello, incorpora miles de indicadores de marketing, lo que permite que el servicio predictivo evalúe y segmente todas las perspectivas posibles.
+
+
+---Conclusión---
+
+Es interesante como empresas se van acercando a nuevas tecnologias para hacer crecer su negocio y quizas sea un poco arriesgado pero cuando todo sale de manera adecuada tienene mas tecnologias a el alcanze de dichas empresas y se va impulsado cada ves mas las nuevas tecnologias.

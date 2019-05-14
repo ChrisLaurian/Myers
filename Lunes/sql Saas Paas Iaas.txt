@@ -1,0 +1,50 @@
+SaaS:
+
+El software como servicio (SaaS) permite a los usuarios conectarse a aplicaciones basadas en la nube a través de Internet y usarlas. Algunos ejemplos comunes son el correo electrónico, los calendarios y las herramientas ofimáticas (como Microsoft Office 365).
+
+SaaS ofrece una solución de software integral que se adquiere de un proveedor de servicios en la nube mediante un modelo de pago por uso. Usted alquila el uso de una aplicación para su organización y los usuarios se conectan a ella a través de Internet, normalmente con un explorador web. Toda la infraestructura subyacente, el middleware, el software y los datos de las aplicaciones se encuentran en el centro de datos del proveedor. El proveedor de servicios administra el hardware y el software y, con el contrato de servicio adecuado, garantizará también la disponibilidad y la seguridad de la aplicación y de sus datos. SaaS permite que una organización se ponga en marcha y pueda ejecutar aplicaciones con un costo inicial mínimo.
+
+Escenarios SaaS habituales
+Si ha utilizado un servicio de correo electrónico basado en web, como Outlook, Hotmail o Yahoo! Mail, entonces ya ha usado una forma de SaaS. Con estos servicios, usted inicia sesión en su cuenta a través de Internet, a menudo desde un explorador web. El software de correo electrónico se encuentra en la red del proveedor de servicios, donde también se almacenan los mensajes. Puede obtener acceso a su correo electrónico y a los mensajes almacenados desde un explorador web en cualquier equipo o dispositivo conectado a Internet.
+
+Los ejemplos anteriores son servicios gratuitos para uso personal. Para el uso en una organización, puede alquilar aplicaciones de productividad, como correo electrónico, colaboración y calendario; y aplicaciones empresariales sofisticadas, como CRM (administración de las relaciones con el cliente), ERP (planeamiento de recursos empresariales) y administración de documentos. Usted paga por el uso que hace de estas aplicaciones a través de una suscripción o conforme al nivel de uso.
+
+PaaS:
+
+Plataforma como servicio (PaaS) es un entorno de desarrollo e implementación completo en la nube, con recursos que permiten entregar todo, desde aplicaciones sencillas basadas en la nube hasta aplicaciones empresariales sofisticadas habilitadas para la nube. Usted le compra los recursos que necesita a un proveedor de servicios en la nube, a los que accede a través de una conexión segura a Internet, pero solo paga por el uso que hace de ellos.
+
+Al igual que IaaS, PaaS incluye infraestructura (servidores, almacenamiento y redes), pero también incluye middleware, herramientas de desarrollo, servicios de inteligencia empresarial (BI), sistemas de administración de bases de datos, etc. PaaS está diseñado para sustentar el ciclo de vida completo de las aplicaciones web: compilación, pruebas, implementación, administración y actualización.
+
+PaaS permite evitar el gasto y la complejidad que suponen la compra y la administración de licencias de software, la infraestructura de aplicaciones y el middleware subyacentes, las herramientas de desarrollo y otros recursos. Usted administra las aplicaciones y los servicios que desarrolla y, normalmente, el proveedor de servicios en la nube administra todo lo demás.
+
+Normalmente, las organizaciones utilizan PaaS en estos casos:
+
+Marco de desarrollo. PaaS proporciona un marco que los desarrolladores pueden ampliar para desarrollar o personalizar aplicaciones basadas en la nube. De forma similar a la creación de una macro en Excel, PaaS permite a los desarrolladores crear aplicaciones usando componentes de software integrados. Se incluyen características de la nube como escalabilidad, alta disponibilidad y funcionalidad multiinquilino, lo que reduce la cantidad de código que tienen que escribir los desarrolladores.
+
+Análisis o inteligencia empresarial. Las herramientas que se proporcionan como servicio con PaaS permiten a las organizaciones llevar a cabo análisis y minería de datos, obtener información privilegiada, detectar patrones y predecir resultados con el fin de mejorar las previsiones, las decisiones sobre el diseño de productos, el retorno de las inversiones y otras decisiones empresariales.
+
+Servicios adicionales. Los proveedores de PaaS pueden ofrecer otros servicios que mejoren las aplicaciones, como flujo de trabajo, directorios, seguridad y programación.
+
+IaaS:
+
+Infraestructura como servicio (IaaS) es una infraestructura informática instantánea, aprovisionada y administrada a través de Internet. Es uno de los cuatro tipos de servicios en la nube, junto con el software como servicio (SaaS), la plataforma como servicio (PaaS) y sin servidor.
+
+IaaS escala rápidamente según la demanda, lo que le permite pagar solo por lo que usa. Le ayuda a evitar el gasto y la complejidad de comprar y administrar sus propios servidores físicos y otra infraestructura de centros de datos. Cada recurso se ofrece como un componente de servicio separado, y solo necesita alquilar uno en particular durante el tiempo que lo necesite. Un proveedor de servicios de computación en la nube, como Azure, administra la infraestructura, mientras que usted compra, instala, configura y administra su propio software: sistemas operativos, middleware y aplicaciones.
+
+Entre las cosas habituales que las empresas hacen con IaaS, están las siguientes:
+
+Desarrollo y pruebas. Los equipos pueden configurar y desmontar rápidamente entornos de desarrollo y pruebas, lo que reduce el tiempo de comercialización de las aplicaciones nuevas. Con IaaS, escalar y reducir verticalmente entornos de desarrollo y pruebas es más rápido y económico.
+
+Hospedaje de sitios web. Ejecutar sitios web con IaaS puede ser más económico que el hospedaje web tradicional.
+
+Almacenamiento, copias de seguridad y recuperación. Las organizaciones evitan el desembolso de capital necesario para obtener almacenamiento y la complejidad de administrarlo, para lo que suele ser necesario personal cualificado que administre los datos y cumplir una serie de requisitos legales. IaaS es muy útil para controlar la demanda impredecible y la necesidad cada vez mayor de almacenamiento. También puede simplificar el planeamiento y la administración de los sistemas de copia de seguridad y recuperación.
+
+Aplicaciones web. IaaS proporciona toda la infraestructura necesaria para sustentar aplicaciones web, como almacenamiento, servidores web y de aplicaciones, y recursos de red. Las organizaciones pueden implementar aplicaciones web con rapidez en IaaS, así como escalar o reducir verticalmente la infraestructura, sin dificultad, cuando la demanda de las aplicaciones sea impredecible.
+
+Informática de alto rendimiento. La informática de alto rendimiento (HPC) en superequipos, mallas de PC o clústeres de PC, contribuye a solucionar los problemas complejos que implican millones de variables o cálculos. Por ejemplo, simulaciones de terremotos y plegamiento de proteínas, predicciones climáticas y meteorológicas, creación de modelos financieros y evaluación de diseños de productos.
+
+Análisis de macrodatos. El término “macrodatos” hace referencia a conjuntos de datos enormes que contienen patrones, tendencias y asociaciones con un fuerte potencial. La minería de datos para encontrar o extraer estos patrones ocultos requiere una capacidad de procesamiento enorme que IaaS ofrece de manera económica.
+
+---Conclución---
+
+No pensaba que estaria tan a nuestro alcanze o que utilizemos este tipo de tecnologias tan cotidianamente. Es indispesable el uso de estas tecnologias hoy en dia y son numerosas las empresas que las utilizan en estos dias, sin duda cada dia aprendemos algo nuevo y el dia de hoy consco un poco mas de estas tecnologias que se estan utilizando.

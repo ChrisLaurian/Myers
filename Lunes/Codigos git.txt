@@ -1,0 +1,36 @@
+
+git branch:
+
+Nos muestra una lista de los branches que existen en nuestro repositorio.
+
+git checkout -b NombreDeBranch
+
+Crea un nuevo branch y automaticamente GIT se cambia al branch creado, clonando el branch desde donde ejecutamos el comando.
+
+git checkout NombreDeBranch
+
+Sirve para moverse entre branches, en este caso vamos al branch que indicamos en el comando.
+
+git commit -am "mensaje"
+
+Hace commit de los archivos que han sido modificados y GIT los está siguiendo.
+
+git add -A
+
+Agrega al repositorio TODOS los archivos y carpetas que estén en nuestro proyecto, los cuales GIT no está siguiendo.
+
+git status
+
+Nos indica el estado del repositorio, por ejemplo cuales están modificados, cuales no están siendo seguidos por GIT, entre otras características.
+
+git clone URL/name.git NombreProyecto
+
+Clona un proyecto de git en la carpeta NombreProyecto.
+
+git pull origin NombreDeBranch
+
+Hace una actualización en nuestro branch local, desde un branch remoto que indicamos en el comando.
+
+---Conclución---
+
+Bueno son los codigos que estaremos utilizando a lo largo del curso quizas ahora no me los he memorizado pero pasando el tiempo sera muchas facil saber como funcionan ya que los estaremos utilizando a lo largo del curso y en otros proyectos.
