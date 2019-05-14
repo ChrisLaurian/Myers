@@ -1,0 +1,11 @@
+Algoritmo Knuth-Morris-Pratt
+
+El algoritmo KMP trata de localizar la posición de comienzo de una cadena dentro de otra. Antes que nada con la cadena a localizar se precalcula una tabla de saltos (conocida como tabla de fallos) que después al examinar las cadenas se utiliza para hacer saltos cuando se localiza un fallo.
+
+Supongamos una tabla 'F' ya precalculada, y supongamos que la cadena a buscar esté contenida en el arreglo 'P()', y la cadena donde buscamos esté contenida en un array 'T()'. Entonces ambas cadenas comienzan a compararse usando un puntero de avance para la cadena a buscar, si ocurre un fallo en vez de volver a la posición siguiente a la primera coincidencia, se salta hacia donde sobre la tabla, indica el puntero actual de avance de la tabla. El array 'T' utiliza un puntero de avance absoluto que considera donde se compara el primer carácter de ambas cadenas, y utiliza como un puntero relativo (sumado al absoluto) el que utiliza para su recorrido el array 'P'. Se dan 2 situaciones:
+
+Mientras existan coincidencias el puntero de avance de 'P', se va incrementando y si alcanza el final se devuelve la posición actual del puntero del array 'T'
+Si se da un fallo, el puntero de avance de 'T' se actualiza hasta, con la suma actual del puntero de 'P' + el valor de la tabla 'F' apuntado por el mismo que 'P'. A continuación se actualiza el puntero de 'P', bajo una de 2 circunstancias; Si el valor de 'F' es mayor que -1 el puntero de 'P', toma el valor que indica la tabla de salto 'F', en caso contrario vuelve a recomenzar su valor en 0.
+
+---Conclución---
+Es un buen metodo me agrada el utilizar la informacion de los errores para buscar las subcadenas, la mayoria o mas bien algunos de los algoritmos utilizan la resolucion de problemas que usamos las personas o algunos de nosotros, pero lo mas impresionante es como lo pueden implementar en codigo, sin duda alguna este tipo de algoritmos me agradan pero se ve complicado de comprender.

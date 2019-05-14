@@ -1,0 +1,12 @@
+algoritmo de karatsuba
+
+Hay muchas aplicaciones de la ciencia moderna, como la criptografía y la transformada rápida de Fourier, que necesitan calcular las operaciones con números grandes. Los números utilizados en estas aplicaciones pueden subir a cientos o miles de dígitos. Multiplicación de un gran número requiere enormes recursos de tiempo y espacio. El estudio de los algoritmos de multiplicación rápida siempre ha sido una tarea importante y estudiada por los matemáticos y científicos de la computación. En la década de 1960, los matemáticos rusos descubrieron una forma más rápida para multiplicar dos números. La técnica se la atribuyó a Karatsuba (aunque su desarrollo de la idea está en disputa), por lo que la técnica se llama multiplicación de Karatsuba. 
+
+La idea del algoritmo es la siguiente:
+
+x = x1*B^m + x0
+y = y1*B^m + y0
+
+--Conclusión---
+
+En lo que estube leyendo es un algoritmo muy util en cuanto a la aplicacion de numeros grandes, aunque no creo que lo llegue a utilizar en algun proyecto aunque no estaria mal contar con el apoyo de este algoritmo.

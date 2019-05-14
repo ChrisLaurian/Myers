@@ -1,0 +1,13 @@
+Divide y vencerás
+Tanto el ordenamiento por mezcla como el ordenamiento rápido emplean un paradigma algorítmico común que se basa en la recursividad. Este paradigma, divide y vencerás, separa un problema en subproblemas que se parecen al problema original, de manera recursiva resuelve los subproblemas y, por último, combina las soluciones de los subproblemas para resolver el problema original. Como divide y vencerás resuelve subproblemas de manera recursiva, cada subproblema debe ser más pequeño que el problema original, y debe haber un caso base para los subproblemas. Debes pensar que los algoritmos de divide y vencerás tienen tres partes:
+
+Divide el problema en un número de subproblemas que son instancias más pequeñas del mismo problema.
+
+Vence los subproblemas al resolverlos de manera recursiva. Si son los suficientemente pequeños, resuelve los subproblemas como casos base.
+
+Combina las soluciones de los subproblemas en la solución para el problema original.
+
+Puedes recordar fácilmente los pasos para un algoritmo de divide y vencerás como divide, conquista, combina. Aquí está cómo ver un paso, al suponer que cada paso de dividir crea dos subproblemas (aunque algunos algoritmos de divide y vencerás crean más de dos)
+
+--Conclución----
+Es un algoritmo que me agrada bastante me gusta como se escucha la forma de resolucion me parece muy efectiva para la resolucion de problemas de cualquier tipo, me gustaria implementarlo en alguno de mis proyectos y asi ver su funcionamiento.
