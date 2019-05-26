@@ -1,0 +1,90 @@
+Tipos de datos SQL:
+
+--BINARY
+
+1 byte por carácter
+
+En un campo de este tipo se puede almacenar cualquier tipo de datos. No se realiza ninguna conversión de los datos (por ejemplo, a texto). La forma de introducir los datos en un campo binario define cómo se mostrarán como resultado.
+
+--BIT
+
+1 byte
+
+Los valores y los campos Sí y No solo pueden contener uno de los dos valores.
+
+--TINYINT
+
+1 byte
+
+Un valor entero entre 0 y 255.
+
+--MONEY
+
+8 bytes
+
+Un entero escalado entre
+- 922.337.203,685.477,5808 y 922.337.203.685.477,5807.
+
+--DATETIME
+(vea DOUBLE)
+
+8 bytes
+
+Un valor de fecha u hora entre los años 100 y 9999.
+
+--UNIQUEIDENTIFIER
+
+128 bits
+
+Un número de identificación único que se usa con llamadas a procedimiento remoto.
+
+--REAL
+
+4 bytes
+
+Un valor de coma flotante de precisión sencilla entre -3,402823E38 y -1,401298E-45 para los valores negativos, y entre 1,401298E-45 y 3,402823E38 para los valores positivos y 0.
+
+--FLOAT
+
+8 bytes
+
+Un valor de coma flotante de precisión doble entre -1,79769313486232E308 y -4,94065645841247E-324 para los valores negativos, y entre 4,94065645841247E-324 y 1,79769313486232E308 para los valores positivos y 0.
+
+--SMALLINT
+
+2 bytes
+
+Un entero corto entre -32.768 y 32.767.
+
+--INTEGER
+
+4 bytes
+
+Un entero largo entre -2.147.483.648 y 2.147.483.647.
+
+--DECIMAL
+
+17 bytes
+
+Un tipo de datos numérico exacto que contiene valores desde 1028-1 hasta -1028-1. Se puede definir la precisión (1-28) y la escala (0-precisión definida). La precisión y escala predeterminadas son 18 y 0, respectivamente.
+
+--TEXT
+
+Dos bytes por carácter (vea la nota)
+
+De cero a un máximo de 2,14 gigabytes.
+
+--IMAGE
+
+Según sea necesario
+
+De cero a un máximo de 2,14 gigabytes. Se usa para objetos OLE.
+
+--CHARACTER
+
+Dos bytes por carácter (vea la nota)
+
+De cero a 255 caracteres.
+
+Conclusión:
+Bueno el conocimiento de los tipos de datos en SQL es para mi lo mas importante en cuanto el conocer la bases o lo escensial de SQL te ayuda a saber que tipo de dato debdes de poner en determinado campo y con esto tener una base de datos mas organizacionada.

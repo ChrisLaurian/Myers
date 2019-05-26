@@ -1,0 +1,45 @@
+Tipos de relaciones SQL
+
+Los diseños de la base de datos están estrechamente relacionados con las relaciones de la base de datos, la asociación entre dos columnas en una o más tablas.
+
+Las relaciones se definen sobre la base de columnas de clave coincidentes.
+
+En SQL, estas relaciones se definen utilizando restricciones de clave principal a clave externa.
+
+Se crea un enlace entre dos tablas donde la clave principal de una tabla se asocia con la clave externa de otra tabla utilizando las relaciones de la base de datos.
+
+---Cardinalidad
+La cardinalidad es una restricción en una relación que especifica el número de instancias de entidad que una entidad específica puede estar relacionada a través de la relación. 
+
+Las tres clasificaciones son: uno a uno, uno a muchos y muchos a muchos.
+
+---Uno a uno
+Una entidad del conjunto de entidades A puede asociarse con a lo sumo una entidad del conjunto de entidades B y viceversa.
+
+---Uno a muchos
+Una entidad del conjunto de entidades A puede asociarse con más de una entidad del conjunto de entidades B, sin embargo, una entidad del conjunto de entidades B puede asociarse con, como máximo,a una entidad.
+
+Las relaciones uno-a-uno tienen 1 especificado para ambas cardinalidades, y no parecen surgir muy a menudo. Para ilustrar un uno-a-uno, requerimos reglas comerciales muy específicas.
+
+---Muchos a uno
+Más de una entidad del conjunto de entidades A puede asociarse como máximo con una entidad del conjunto de entidades B, sin embargo, una entidad del conjunto de entidades B puede asociarse con más de una entidad del conjunto de entidades A.
+
+Una entidad de A puede asociarse con más de una entidad desde B y viceversa.
+
+---Relación de muchos a muchos
+Las relaciones de muchos a muchos tienen "muchos" especificados para ambas cardinalidades, y también son muy comunes.
+
+---Relación débil
+Las relaciones débiles son conexiones entre una entidad débil y su propietario.
+
+Una relación de identificación es una relación entre un tipo de entidad fuerte y una débil, donde se requiere la clave del tipo de entidad fuerte para identificar de manera única las instancias del tipo de entidad débil. El tipo de entidad débil tendrá un atributo de clave parcial (discriminador) que, junto con la clave del tipo de entidad fuerte, identifica de forma única a la entidad débil.
+
+---Relaciones no identificativas
+Una relación no identificativa es una relación entre tipos de entidades fuertes. Cada entidad tipo tiene una clave especificada, cada entidad tiene un atributo que lo identifica de manera única y lo distingue de cualquier otra instancia en el conjunto de entidad o extensión correspondiente.
+
+---Relaciones recursivas
+La recursión en un modelo de datos es un tema especialmente difícil. Decimos que tenemos un una relación ecursiva si el mismo tipo de entidad aparece más de una vez en una relación. Estas relaciones parecen ocurrir siempre en algún lugar en un modelo de datos de tamaño regular a grande. Un típico ejemplo de negocios surge cuando tenemos una regla comercial como "un empleado supervisa otros empleados".
+
+Conclusión:
+
+Tambien saber como relacionar las columnas dentro de la base de datos es sumamente importante pero tenemos que conocer que tipo de relacion es mejor con nuestra base de datos y por este motivo conociendo la base de datos y su aplicacion nos podremos decidir por alguno de relaciones.

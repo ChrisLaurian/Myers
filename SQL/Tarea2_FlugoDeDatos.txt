@@ -1,0 +1,10 @@
+Flujo de datos SQL:
+
+SQL Server Integration Services proporciona tres tipos de componentes de flujo de datos: orígenes, transformaciones y destinos. Los orígenes extraen datos de almacenes de datos tales como tablas y vistas en bases de datos relacionales, archivos y bases de datos de Analysis Services . Las transformaciones modifican, resumen y limpian datos. Los destinos cargan datos en almacenes de datos o crean conjuntos de datos almacenados en la memoria.
+
+Además, Integration Services proporciona rutas que conectan la salida de un componente con la entrada de otro componente. Las rutas definen la secuencia de los componentes y permiten agregar anotaciones en el flujo de datos o ver el origen de la columna.
+Los componentes de flujo de datos se conectan conectando la salida de orígenes y destinos con la entrada de transformaciones y destinos. Al generar un flujo de datos normalmente se conecta el segundo componente y los componentes subsiguientes a medida que se agregan al flujo de datos. Después de conectar el componente, las columnas de entrada están disponibles para su uso en la configuración del componente. Cuando no hay columnas de entrada disponibles, tiene que completar la configuración del componente después de conectarse al flujo de datos. Para más información, vea Rutas de Integration Services y Conectar componentes con rutas de acceso.
+
+Conclusión:
+
+Como acabamos de leer los tipos de flujos de datos, son sumamente importantes en nuestro trabajo dentro de sql y nos simplifica mucho el trabajo en las bases de datos realcionales.
