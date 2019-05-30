@@ -1,0 +1,11 @@
+.NET:
+
+.NET es un framework de Microsoft que hace un énfasis en la transparencia de redes, con independencia de plataforma de hardware y que permite un rápido desarrollo de aplicaciones. Basada en ella, la empresa intenta desarrollar una estrategia horizontal que integre todos sus productos, desde el sistema operativo hasta las herramientas de mercado.
+
+Caracteriticas ahora que es opensource:
+
+Ya está publicado el Core de .NET en su propio repositorio GitHub, en donde se aceptan los Pull Request que cualquier desarrollador puede enviar, de acuerdo a las normas definidas en el propio repositorio.
+
+Conclusión:
+
+Desconozco mucho de este tema pero he escuchado hablar mucho del .net en algunos proyectos, pero la verdad no se muy bien como usarlo, ahora ya se para que se suele utilizar y sus nuevas caracteristicas ahora que es open source. sinceramente parece muy novedoso.

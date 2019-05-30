@@ -1,0 +1,71 @@
+backtracking C#
+
+//Se importan librerias a usar
+using System.Collections.Generic;  
+using System.Linq;  
+using System.Text;  
+using System.Threading.Tasks;  
+namespace Backtracking {  
+    class Program {  
+        //se declara variable statica
+        static int N;  
+        //declaramos funcion estatica
+        static void printBoard(int[, ] board) {  
+            for (int i = 0; i < N; i++) {  
+                for (int j = 0; j < N; j++) { 
+                    //se imprime en pantalla i, j 
+                    Console.Write(board[i, j] + " ");  
+                }  
+                //se hace un salto de linea 
+                Console.Write("\n");  
+            }  
+        }  
+        //se declara funcion boleana estatica
+        static Boolean toPlaceOrNotToPlace(int[, ] board, int row, int col) {  
+            //se declara variable entera i, j
+            int i, j;  
+            //SE aplica ciclo for 
+            for (i = 0; i < col; i++) { 
+                //si row, 1 es igual a 1 se retorna como valor falso 
+                if (board[row, i] == 1) return false;  
+            }  
+            for (i = row, j = col; i >= 0 && j >= 0; i--, j--) {  
+                if (board[i, j] == 1) return false;  
+            }  
+            for (i = row, j = col; j >= 0 && i < N; i++, j--) {  
+                if (board[i, j] == 1) return false;  
+            }  
+            //si no retorna el valor verdadero
+            return true;  
+        }  
+        //Se declar funcion boleana estatica 
+        static Boolean theBoardSolver(int[, ] board, int col) {  
+            //si  col es mayor o igual que n devuelve valor verdadero
+            if (col >= N) return true;  
+            //se declara ciclo for 
+            for (int i = 0; i < N; i++) {  
+                if (toPlaceOrNotToPlace(board, i, col)) {  
+                    board[i, col] = 1;  
+                    if (theBoardSolver(board, col + 1)) return true;    
+                    board[i, col] = 0;  
+                }  
+            }  
+            //retorna valor falso
+            return false;  
+        }  
+        //Se declara funcion principal 
+        static void Main(string[] args) {  
+            //se escribe en pantalla
+            Console.WriteLine("State the value of N in this program!");  
+            //Se convierte a int
+            N = Convert.ToInt32(Console.ReadLine());  
+            int[, ] board = new int[N, N];  
+            if (!theBoardSolver(board, 0)) {  
+                //se escribe en pantalla
+                Console.WriteLine("Solution not found.");  
+            }  
+            printBoard(board);  
+            Console.ReadLine();  
+        }  
+    }  
+}  

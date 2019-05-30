@@ -1,0 +1,23 @@
+Linear Congruential Python
+
+#Declaramos variables
+a = 3
+c = 9
+m = 16
+xi = 0
+
+#definimos funcion que recibe un un parametro x
+def seed(x):
+    global xi
+    xi = x
+
+#definimos la funcion rng
+def rng():
+    global xi
+    xi = (a*xi + c)%m
+    return xi
+
+#ciclo for 
+for i in range(10):
+    #se imprime el resultado de la funcion rng
+    print rng()

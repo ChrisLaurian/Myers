@@ -1,0 +1,72 @@
+linear congruential C#
+
+using System;
+
+//nombre de proyecto
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        //Funcion principal
+        static void Main(string[] args)
+        {   
+            //Variables con un arreglo
+            var freq = new int[20];
+            var rng = new RandomNumberGenerator();
+            //ciclo for
+            for (int i = 0; i < 100; i++)
+            {   
+                //Variable igualada a la otra vairable
+                var rnd = rng.Next(20);
+                freq[rnd] += 1;
+                //se escribe en consola
+                Console.Write("{0}, ", rnd);
+            }
+
+            //se escribe en consola
+            Console.WriteLine("Done.");
+            //Ciclo for 
+            for (int i = 0; i < 20; i++)
+            {   
+                //se escribe en consola
+                Console.Write("{0}={1}\t", i, freq[i]);
+            }
+            Console.ReadLine();
+        }
+    }
+
+    
+    class RandomNumberGenerator
+    {   
+        //se definen constantes
+        private const long m = 4294967296; // aka 2^32
+        private const long a = 1664525;
+        private const long c = 1013904223;
+        private long _last;
+
+        //funcion publica
+        public RandomNumberGenerator()
+        {
+            _last = DateTime.Now.Ticks % m;
+        }
+
+        //funcion publica
+        public RandomNumberGenerator(long seed)
+        {
+            _last = seed;
+        }
+
+        //funcion privada
+        public long Next()
+        {
+            _last = ((a * _last) + c) % m;
+
+            return _last;
+        }
+        //funcion privada
+        public long Next(long maxValue)
+        {
+            return Next() % maxValue;
+        }
+    }
+}

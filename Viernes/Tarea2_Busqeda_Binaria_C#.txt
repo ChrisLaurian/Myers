@@ -1,0 +1,89 @@
+busqeda binaria C#
+
+//se importan librerias en uso
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+//nombre del proyecto
+namespace BusquedaBinaria
+{
+    //clase de proyecto
+    class Busqueda
+    {
+        private int[] vector;
+
+        //se declara funcion publica 
+        public void Cargar()
+        {
+            //se escribe en pantalla
+            Console.WriteLine("Busqueda Binaria");
+            Console.WriteLine("Ingrese 10 Elementos");
+            string linea;
+            //se iguala el arreglo a vector
+            vector = new int[10];
+            //uso de ciclo for
+            for (int f = 0; f < vector.Length; f++)
+            {
+                //se escribe en pantalla
+                Console.Write("Ingrese elemento " + (f + 1) + ": ");
+                linea = Console.ReadLine();
+                //a el arreglo de vector se le iguala el int.parse
+                vector[f] = int.Parse(linea);
+            }
+        }
+
+        //Funcion publica que recibe argumento entero
+        public void busqueda(int num)
+        {
+            //se declara variables enteras y una boleana
+            int l = 0, h = 9;
+            int m = 0;
+            bool found = false;
+
+            //Cuando l sea menor o igual y found sea iguala  falso entonces
+            while (l <= h && found == false)
+            {
+                //se hacen estas instrucciones si se cumple la sentencia while
+                m = (l + h) / 2;
+                //si el arreglo de vetor es igual a num found es verdadero
+                if (vector[m] == num)
+                    found = true;
+                if (vector[m] > num)
+                    h = m - 1;
+                else
+                    l = m + 1;
+            }
+            //si found es igual a falso entonces escribir en pantalla
+            if (found == false)
+            { Console.Write("\nEl elemento {0} no esta en el arreglo", num); }
+            else
+            { Console.Write("\nEl elemento {0} esta en la posicion: {1}", num, m + 1); }
+        }
+
+        //funcion publica
+        public void Imprimir()
+        {   
+            //se usa ciclo for y se escribe en pantalla
+            for (int f = 0; f < vector.Length; f++)
+            {
+                Console.Write(vector[f] + "  ");
+            }
+        }
+
+
+        //funcion principal se usan las funciones declaradas anteriormente y se imprime 
+        static void Main(string[] args)
+        {
+            Busqueda pv = new Busqueda();
+            pv.Cargar();
+            pv.Imprimir();
+            Console.Write("\n\nElemento a buscar: ");
+            int num = int.Parse(Console.ReadLine());
+            pv.busqueda(num);
+            Console.ReadKey();
+           
+        }
+    }
+}

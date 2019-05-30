@@ -1,0 +1,16 @@
+buble sort Python
+
+def bubbleSort(arr):
+    n = len(arr)
+ 
+    # Recorrer todos los elementos del array
+    for i in range(n):
+ 
+        # Los últimos elementos i ya están en su lugar
+        for j in range(0, n-i-1):
+ 
+            # Atraviesa la matriz de 0 a n-i-1
+            # Cambiar si el elemento encontrado es mayor
+            # que el siguiente elemento
+            if arr[j] > arr[j+1] :
+                arr[j], arr[j+1] = arr[j+1], arr[j]

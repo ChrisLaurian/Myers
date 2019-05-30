@@ -1,0 +1,8 @@
+hash table Python
+
+# Declarar diccionario
+dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}
+
+# acceras al diccionario con la llave
+print "dict['Name']: ", dict['Name']
+print "dict['Age']: ", dict['Age']

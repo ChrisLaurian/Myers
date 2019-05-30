@@ -1,0 +1,118 @@
+quickshort documentado en C#
+
+//indicamos librerias
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+//Nombre del proyecto
+namespace quicksort
+{
+    //delcaramos clase, recordando programacion orientada a objetos
+    class Class
+    {
+        //Declaramos funcion princila main
+        static void Main()
+        {
+            //Declaramos N como INTEGER
+            int n;
+            //Mostramos mensajes en cosola de la longitud del vector a ordenar
+            Console.WriteLine("Metodo de Quick Sort");
+            Console.Write("Cuantos longitud del vector: ");
+            //Combertimos Int para poder leerlo 
+            n = Int32.Parse(Console.ReadLine());
+            //Declaramos objeto llenar y le asignamos clase
+            llenar b = new llenar(n);
+        }
+    }
+
+    //Declaramos clase llenar
+    class llenar
+    {
+        //Declaramos h como tipo de dato int
+        int h;
+        //Declaramos el vector como arreglo de int
+        int[] vector;
+        //Declaramos metodo llenar que tiene que recibir como parametro n declarado anteriormente
+        public llenar(int n)
+        {
+            //Asignamos el vector a H como el numero del arreglo
+            h = n;
+            vector = new int[h];
+            //Usaos un ciclo for para ingresar valores de uno en uno 
+            for (int i = 0; i < h; i++)
+            {
+                //se ingresa el valor y lo leemos
+                Console.Write("ingrese valor {0}: ", i + 1);
+                vector[i] = Int32.Parse(Console.ReadLine());
+            }
+            quicksort(vector, 0, h - 1);
+            mostrar();
+        }
+
+        //Declaramos la funcion privada que hara el proceso principal que recibe los siguientes paramentros INT
+        private void quicksort(int[] vector, int primero, int ultimo)
+        {   
+            //Declaramos variables como INT y DOUBLE
+            int i, j, central;
+            double pivote;
+            //El valor del primero mas el ultimo y dividido entre 2 le asignamos a central
+            central = (primero + ultimo) / 2;
+            //Al pivote le asiganmos el vector con el arreglo central
+            pivote = vector[central];
+            //a las letras i, j le asiganmos el primero y el ultimo
+            i = primero;
+            j = ultimo;
+            //usamos metodo do while
+            do
+            {
+                //Cuando la posicion de vector i sea menor que el pivote entonces avanzamos una posicion en i
+                while (vector[i] < pivote) i++;
+                //Cuando la posicion de vector j sea menor que el pivote entonces regresamos una posicion en j
+                while (vector[j] > pivote) j--;
+                //Si i es menor o igual que j hacemos lo de las llaves
+                if (i <= j)
+                {
+                    //Declaramos temp como variable tipo Int
+                    int temp;
+                    //a el arreglo de vector j le asignamos la nueva variable temp
+                    temp = vector[i];
+                    //a el arreglo vector i le asignamos el arreglo vector j
+                    vector[i] = vector[j];
+                    //a el vector j le asignamos la variable temp
+                    vector[j] = temp;
+                    i++;
+                    j--;
+                }
+                //Cuando i sea menor o igual que j
+            } while (i <= j);
+
+            // Si primero es menor que j entonces hacer
+            if (primero < j)
+            {
+                // a el metodo darle los parametros siguientes primero y j
+                quicksort(vector, primero, j);
+            }
+            //Si i es menor que ultimo hacer
+            if (i < ultimo)
+            {
+                // a el metodo darle los parametros siguientes i e ultimo
+                quicksort(vector, i, ultimo);
+            }
+        }
+        // declaramos funcion privada con el nombre de mostrar
+        private void mostrar()
+        {
+            //mostramos en pantalla mensaje
+            Console.WriteLine("Vector ordenados en forma ascendente");
+            //usamos cilo for para imprimir el resultado ordenado 
+            for (int i = 0; i < h; i++)
+            {   
+                //Imprimimos el resultado
+                Console.Write("{0} ", vector[i]);
+            }
+            Console.ReadLine();
+        }
+    }
+}

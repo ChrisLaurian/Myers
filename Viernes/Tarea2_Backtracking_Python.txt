@@ -1,0 +1,15 @@
+backtracking Python
+
+#definimos funcion que recibe como paraemtros list y s
+def permute(list, s):
+    #si list es gual a 1 entonces
+    if list == 1:
+        return s
+    else:
+        return [ y + x
+                 for y in permute(1, s)
+                 for x in permute(list - 1, s)
+                 ]
+#se regresan las permutas
+print(permute(1, ["a","b","c"]))
+print(permute(2, ["a","b","c"]))
