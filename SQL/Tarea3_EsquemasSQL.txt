@@ -1,0 +1,29 @@
+---Que es un esquema de una base de datos sql?
+
+Trabajar con esquemas permite disponer de más flexibilidad en la administración de los permisos de objeto de base de datos. Un esquema es un contenedor con nombre para objetos de base de datos, que permite agrupar objetos en espacios de nombres independientes.
+
+---como usamos los esquemas de una base de datos?
+
+Esquemas por defecto
+SQL Server incluye diez esquemas predefinidos que usan el mismo nombre que los usuarios y los roles de base de datos integrados. Estos esquemas se han creado principalmente por compatibilidad con versiones anteriores. No puede quitar los esquemas con el mismo nombre que las funciones fijas de base de datos, aunque no los necesite. No puede quitar los siguientes esquemas:
+
+1 – dbo
+2 – guest
+3 – sys
+4 – INFORMATION_SCHEMA
+
+Debemos saber que los objetos que se crean en sql server sin especificar esquema se crean bajo el esquema dbo
+
+Para crear un esquema:
+
+CREATE SCHEMA <Nombre> AUTHORIZATION DBO
+
+AUTHORIZATION DBO: Si se crea un objeto sin especificar esquema, ese objeto le pertenece a DBO, por tal razón, hay que pedirle autorización para poder mover ese objeto a tu nuevo esquema.
+
+Para mover un objeto de un esquema a otro:
+ALTER SCHEMA <Nuevo esquema> TRANSFER Esquema.Tabla
+
+
+--Conclusion:
+
+Como hemos revisado nos sirven en todo el trabajo dentro de la base de datos y su conocimiento es de vital importancia para nosotros como consultores sql o bueno como programadores.

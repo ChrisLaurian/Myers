@@ -1,0 +1,46 @@
+que es -T -SQL (COnsultas sql):
+
+Transact-SQL (T-SQL) es una extensión al SQL de Microsoft y Sybase. SQL, que frecuentemente se dice ser un Lenguaje de Búsquedas Estructurado (por sus siglas en inglés), es un lenguaje de cómputo estandarizado, desarrollado originalmente por IBM para realizar búsquedas, alterar y definir bases de datos relacionales utilizando sentencias declarativas. T-SQL expande el estándar de SQL para incluir programación procedimental, variables locales, varias funciones de soporte para procesamiento de strings, procesamiento de fechas, matemáticas, etc, y cambios a las sentencias DELETE y UPDATE. Estas características adicionales hacen de T-SQL un lenguaje que cumple con las características de un autómata de Turing.
+
+Ejemplos:
+
+1.-  SELECT * FROM EMPLOYEE
+
+2.- SELECT PROJNAME, PRSTDATE, PRENDATE
+   FROM PROJECT          
+   ORDER BY PRENDATE DESC
+
+3.- SELECT WORKDEPT, AVG(SALARY)
+     FROM EMPLOYEE   
+     GROUP BY WORKDEPT 
+     ORDER BY 2
+
+4.- SELECT SALARY+BONUS+COMM AS TOTAL_PAY
+     FROM EMPLOYEE
+     ORDER BY TOTAL_PAY
+
+5.- SELECT *
+FROM Production.Product
+ORDER BY Name ASC;
+
+6.- SELECT Name, ProductNumber, ListPrice AS Price
+FROM Production.Product 
+ORDER BY Name ASC;
+
+7.- SELECT Name, ProductNumber, ListPrice AS Price
+FROM Production.Product 
+WHERE ProductLine = 'R' 
+AND DaysToManufacture < 4
+ORDER BY Name ASC;
+
+8.- SELECT idCliente, nombre, descripcion
+FROM CLIENTES
+
+9.- SELECT CLIENTES.idCliente, CLIENTES.nombre, CLIENTES.descripcion
+FROM CLIENTES
+
+10.- SELECT cp, ciudad
+FROM DIRECCION
+
+---Conclusion:
+Bueno mas tipos de consultas, es algo rutinario dentro del rol de sql y es indispensable saber como usarlas y utilizarlas correctamente.

@@ -1,0 +1,7 @@
+Permisos ACL y autenticacion
+
+sirve para darle permisos a los usuarios para conectarse y por default vienen cerrados estos canales de comunicación. Por ejemplo si necesitamos conectarnos a un servidor LDAP tenemos que crear un permiso para decirle a la base de datos que permita esto, por seguridad vamos a tener todo bloqueado y de esta forma controlamos las conexiones.
+
+Conclusion: 
+
+Tambien es muy importante el uso correcto de la autenticacion por obias razones de seguridad dentro de la base de datos, una fuga es fatal o el acceso de personal no autorizado es mucho riesgo dentro de una empresa.
